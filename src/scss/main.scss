@@ -1,0 +1,40 @@
+@import "fonts";
+@import "colors";
+
+* {
+  outline: none !important;
+  @extend %Play;
+}
+
+body {
+  background: $secondary;
+}
+
+.content {
+  padding-top: 85px;
+}
+
+.card {
+  background: $white;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $secondary;
+    &-icon {
+      color: $primary;
+      display: flex;
+      padding: 10px;
+      > svg {
+        display: block;
+        width: 41px !important;
+        height: 41px !important;
+      }
+    }
+    h4 {
+      margin-bottom: 0;
+      font-size: convertFontToRem(14);
+      font-weight: bold;
+    }
+  }
+}
