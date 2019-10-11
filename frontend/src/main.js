@@ -26,7 +26,7 @@ import V2Datepicker from 'v2-datepicker';
 Vue.use(V2Datepicker)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-Vue.prototype.$hostname = 'http://192.168.31.237:8000';
+Vue.prototype.$hostname = 'http://159.65.243.44';
 
 new Vue({
     router,
